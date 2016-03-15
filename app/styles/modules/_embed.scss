@@ -30,6 +30,13 @@
 		font-size: 0.75rem;
 		display: block;
 		margin-top: 2em;
+		text-align: left;
+		.video-credit{
+			float: right;
+			&:before{
+				content: '©';
+			}
+		}
 	}
 
 	.video-poster{

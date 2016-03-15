@@ -4,14 +4,29 @@
 // 
 // -------------------------------------------------
 footer{
-	width: 90%;
-	color: black;
+	width: 95%;
+	color: $text;
 	font-family: 'maison', Helvetica, Arial;
-	margin-top: 7em;
-	margin-left: 5%;
+	margin-top: 1em;
+	margin-left: 2.5%;
+	margin-bottom: 50px;
+	font-size: 16px;
+	@include mq("medium"){
+		width: 75%;
+		margin-left: 12.5%;
+	}
+	@include mq("large"){
+		width: 70%;
+		margin-left: 15%;
+		padding: 50px 5%;
+	}
+	@include mq("widescreen"){
+		width: 60%;
+		margin-left: 20%;
+	}
 	img.footer-logo{
-		width: 90%;
-		margin-left: 5%;
+		width: 100%;
+		margin-left: 0;
 		@include mq("medium"){
 			width: 75%;
 			margin-left: 12.5%;
@@ -26,11 +41,12 @@ footer{
 		text-align: center;
 		font-family: 'ClanPro';
 		font-size: 1.25em;
+		margin-bottom: 10px;
 		@include mq("medium"){
 			font-size: 2em;
 		}
 		@include mq("large"){
-			font-size: 3em;
+			font-size: 2.5em;
 		}
 	}
 	p.footer-text{
@@ -38,10 +54,10 @@ footer{
 		
 		margin-top: 0;
 		line-height: 1.5;
-		font-size: 0.95em;
+		font-size: 1em;
 		font-family: 'maison' !important;
 		@include mq("large"){
-			font-size: 1.3em;
+			font-size: 1.2em;
 		}
 	}
 	.sitemap{

@@ -50,7 +50,7 @@ class Piece {
 		let site = this.getAttribute('data-site');
 
 		if (site === 'twitter'){
-        	var tweet = 'YOUR TEXT HERE #RBMADaily';
+        	var tweet = '.@tresorberlin label turns 25 this summer. @joemuggs tells about a strange offshoot - The Brighton Sound';
         	window.open('https://twitter.com/home?status=' +
 	            (encodeURIComponent(tweet + ' ' +
 	            window.location.href)),
